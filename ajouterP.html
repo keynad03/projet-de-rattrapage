@@ -31,8 +31,7 @@
                                 style="color: #CA151C !important;">Etudiants</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="cours.html"
-                                style="color: #CA151C !important;">Cours</a>
+                            <a class="nav-link active" href="cours.html" style="color: #CA151C !important;">Cours</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link active" href="listeP.html"
@@ -61,68 +60,74 @@
         </nav>
         <div class="position-relative text-center">
     </header>
-    <main>
-        <div class="container-xl">
-            <div class="container-2" style="gap: 150px; margin-top: 80px;">
-            <div class="p-4">
-                <div class="container mt-5" style="justify-content: center;">
-                    <div class="col-3">
-                        <a href="ajouterP.html"> <button class="btn btn-outline" type="button"
-                                style="color: white !important; background-color: #CA151C; margin-top: _0px"> + AJOUTER</button></a>  </div>
-                    <div class="d-flex" style="justify-content: space-between; margin-top: 80px; margin-bottom: 40px;">
-                        <h3>LISTE DES PROFESSEURS</h3>
-                        <a href="#"><button
-                                style="color: white !important; background-color: #CA151C; width: 250px; border: none;">Rechercher</button></a>
+    body style="background-color: #F9F9F9!important;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary larger shadow fixed-top"
+        style="background-color: #FFFFFF !important;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </div>
+    </nav>
+    <form class="d-flex" id="ajouterunlivre" style="background-color: #F9F9F9;" method="post" action="">
+        <div class="container d-flex justify-content-center align-items-center mt-5  larger shadow "
+            style="background-color: white;">
+            <div class="container mt-5" style="justify-content: center;">
+                <h3 style="color: #CA151C;">Ajouter un etudiant</h3>
+                <hr><br>
+                <div class="row " style="justify-content: center; color: #CA151C;">
+                    <div class="col-5 mb-5">
+                        <label for="exampleFormControlInput1" class="form-label">Prenom</label>
+                        <input type="text" class="form-control input-sm" id="exampleFormControlInput1" name="nom">
                     </div>
-                </div>
-                <div class="container-2" style="gap: 150px; margin-top: 30px;">
-µ                    <div class="col-12">
-                        <table class="table table-bordered">
-                            <thead style="background-color: #CA151C;">
-                                <tr>
-                                    <th scope="col" style="background-color: #CA151C; color: white;">#</th>
-                                    <th scope="col" style="background-color: #CA151C; color: white;">Prénom</th>
-                                    <th scope="col" style="background-color: #CA151C; color: white;">Nom</th>
-                                    <th scope="col" style="background-color: #CA151C; color: white;">Spécialité</th>
-                                    <th scope="col" style="background-color: #CA151C; color: white;">Numéro de téléphone</th>
-                                    <th scope="col" style="background-color: #CA151C; color: white;">Grade</th>
-                                    <th scope="col" style="background-color: #CA151C; color: white;"><a href="#"></a>Option</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Soukeyna</td>
-                                    <td>Diop</td>
-                                    <td>DEV</td>
-                                    <td>770945678</td>
-                                    <td>5</td>
-                                    <td class="d-flex justify-content-around gap-3">
-                                        <a href='#' class='btn-sm'
-                                            style="color: rgba(100, 163, 5, 0.932); text-decoration: none;">Présent</a>
-                                        <a href='#' class="text-danger" style="text-decoration: none; ">Absent</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                
-                        </table>
+                    <div class="col-5 mb-5">
+                        <label for="exampleFormControlInput1" class="form-label">grade</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="datedepublication">
                     </div>
+
+
+
+                    <div class="col-5 mb-5">
+                        <label for="exampleFormControlInput1" class="form-label"><Data>Specialité</Data></label>
+                        <select name="categorie" id="categorie" class="form-select">
+                            <option value=""></option>
+
+                        </select>
+
+
+
+
+
+                    </div>
+                    <div class="col-5 mb-5">
+                        <label for="exampleFormControlInput1" class="form-label">nom</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="descriptions">
+                    </div>
+                    <div class="col-5 mb-5">
+                        <label for="exampleFormControlInput1" class="form-label">telephone</label>
+                        <input type="nom" class="form-control" id="exampleFormControlInput1" name="auteur">
+                    </div>
+                    <div class="col-5 mb-5">
+                        <label for="exampleFormControlInput1" class="form-label">Image</label>
+                        <input type="file" class="form-control" id="exampleFormControlInput1" name="image">
+                    </div>
+
+                    <div class="d-grid gap-2 col-5 mx-auto">
+                        <button class="btn mb-5" type="submit" name="ajouter"
+                            style="background-color: #CA151C; color: white;">Ajouter</button>
+                    </div>
+
+
+
+
+
                 </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
             </div>
         </div>
-    </main>
+    </form>
     <footer>
         <!-- place footer here -->
     </footer>
